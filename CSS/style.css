@@ -1,3 +1,21 @@
 body {
   background-color: gainsboro;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+label {
+  font-size: 18px;
+}
+input {
+  width: 150px;
+}
+#resultado {
+  font-size: 18px;
+}
+.txtLabel {
+  margin-bottom: 5px;
+}
+button {
+  margin-top: 6px;
+  font-size: 16px;
 }

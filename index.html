@@ -13,18 +13,20 @@
   </header>
   <main>
     <form name="formImc">
-      <p>
-        <label>Insira seu peso (kg): </label>
-        <input type="text" name="txtPeso"/>
+      <p class="txtLabel">
+        <label for="input-peso">Peso (kg): </label>
       </p>
-      <p>
-        <label>Insira sua altura (m): </label>
-        <input type="text" name="txtAltura"/>
+        <input type="number" name="txtPeso" id="input-peso" value="" step="0.1"/>
+      <p class="txtLabel">
+        <label for="input-altura">Altura (m): </label>
       </p>
+        <input type="number" name="txtAltura" id="input-altura" value="" step="0.01"/>
+      <p>
+        <button form="formImc" id="calcule-imc">Calcule seu IMC</button>
+      </p>
+      <p id="resultado">O resultado do seu IMC é: <strong id="resultado-imc">0,00</strong></p>
+      <p id=""><strong id="status-imc"></strong></p>
     </form>
-      <p>
-        <button>Calcule seu IMC</button>
-      </p>
   </main>
   <script defer src="./js/script.js"></script>
 </body>
