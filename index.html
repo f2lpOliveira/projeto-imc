@@ -5,28 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/style.css">
-  <title>Calculadora IMC</title>
+  
+  <title>Document</title>
 </head>
 <body>
   <header>
-    <h1>Calculadora IMC</h1>
+    <h1>Calcule seu IMC</h1>
   </header>
   <main>
     <form name="formImc">
-      <p class="txtLabel">
-        <label for="input-peso">Peso (kg): </label>
-      </p>
-        <input type="number" name="txtPeso" id="input-peso" value="" step="0.1"/>
-      <p class="txtLabel">
-        <label for="input-altura">Altura (m): </label>
-      </p>
-        <input type="number" name="txtAltura" id="input-altura" value="" step="0.01"/>
-      <p>
-        <button form="formImc" id="calcule-imc">Calcule seu IMC</button>
-      </p>
-      <p id="resultado">O resultado do seu IMC é: <strong id="resultado-imc">0,00</strong></p>
-      <p id=""><strong id="status-imc"></strong></p>
+      <ul>
+        <li>
+          <label for="weight">Peso (kg): </label>
+        </li>
+        <li>
+          <input type="number" id="input-weight" step="0.1" value="">
+        </li>
+        <li>
+          <label for="height">Altura (m): </label>
+        </li>
+        <li>
+          <input type="number" id="input-height" step="0.01" value="">
+        </li>
+        <li class="button">
+          <button type="button" id="calculate-imc">Calcular</button>
+        </li>
+      </ul>
     </form>
+    <p>O resultado do seu IMC é <strong id="imc-result">0,00</strong> e está<br>
+    classificado como <strong id="imc-status">Indefinido</strong>.</p>
   </main>
   <script defer src="./js/script.js"></script>
 </body>
